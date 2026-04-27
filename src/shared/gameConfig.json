@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "elden-ring",
+    "name": "Elden Ring",
+    "defaultMap": "The Lands Between",
+    "defaultMapSlug": "the-lands-between",
+    "hasAntiCheat": true,
+    "suggestedMode": "borderless",
+    "processes": ["eldenring.exe"]
+  },
+  {
+    "slug": "the-witcher-3",
+    "name": "The Witcher 3",
+    "defaultMap": "The Continent",
+    "defaultMapSlug": "velen-novigrad",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["witcher3.exe"]
+  },
+  {
+    "slug": "cyberpunk-2077",
+    "name": "Cyberpunk 2077",
+    "defaultMap": "Night City",
+    "defaultMapSlug": "night-city",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["Cyberpunk2077.exe"]
+  },
+  {
+    "slug": "red-dead-redemption-2",
+    "name": "Red Dead Redemption 2",
+    "defaultMap": "New Hanover",
+    "defaultMapSlug": "new-hanover",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["RDR2.exe"]
+  },
+  {
+    "slug": "baldurs-gate-3",
+    "name": "Baldur's Gate 3",
+    "defaultMap": "Forgotten Realms",
+    "defaultMapSlug": "act-1",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["bg3.exe", "bg3_dx11.exe"]
+  },
+  {
+    "slug": "hogwarts-legacy",
+    "name": "Hogwarts Legacy",
+    "defaultMap": "Hogwarts Valley",
+    "defaultMapSlug": "hogwarts-valley",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["HogwartsLegacy.exe"]
+  },
+  {
+    "slug": "god-of-war",
+    "name": "God of War",
+    "defaultMap": "Midgard",
+    "defaultMapSlug": "midgard",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["GoW.exe"]
+  },
+  {
+    "slug": "the-legend-of-zelda-tears-of-the-kingdom",
+    "name": "Zelda: TotK",
+    "defaultMap": "Hyrule",
+    "defaultMapSlug": "hyrule",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["Ryujinx.exe", "yuzu.exe", "cemu.exe"]
+  },
+  {
+    "slug": "palworld",
+    "name": "Palworld",
+    "defaultMap": "Palpagos Islands",
+    "defaultMapSlug": "palpagos-islands",
+    "hasAntiCheat": true,
+    "suggestedMode": "borderless",
+    "processes": ["Palworld.exe"]
+  },
+  {
+    "slug": "fortnite",
+    "name": "Fortnite",
+    "defaultMap": "Battle Royale Island",
+    "defaultMapSlug": "battle-royale-island",
+    "hasAntiCheat": true,
+    "suggestedMode": "borderless",
+    "processes": ["FortniteClient-Win64-Shipping.exe"]
+  },
+  {
+    "slug": "monster-hunter-wilds",
+    "name": "Monster Hunter Wilds",
+    "defaultMap": "Windward Plains",
+    "defaultMapSlug": "windward-plains",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["MonsterHunterWilds.exe"]
+  },
+  {
+    "slug": "dark-souls-3",
+    "name": "Dark Souls 3",
+    "defaultMap": "Lothric",
+    "defaultMapSlug": "lothric",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["DarkSoulsIII.exe"]
+  },
+  {
+    "slug": "assassins-creed-odyssey",
+    "name": "AC: Odyssey",
+    "defaultMap": "Greece",
+    "defaultMapSlug": "greece",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["ACOdyssey.exe"]
+  },
+  {
+    "slug": "assassins-creed-valhalla",
+    "name": "AC: Valhalla",
+    "defaultMap": "England",
+    "defaultMapSlug": "england",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["ACValhalla.exe"]
+  },
+  {
+    "slug": "hollow-knight",
+    "name": "Hollow Knight",
+    "defaultMap": "Hallownest",
+    "defaultMapSlug": "hallownest",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["hollow_knight.exe"]
+  },
+  {
+    "slug": "valheim",
+    "name": "Valheim",
+    "defaultMap": "The Ten Realms",
+    "defaultMapSlug": "the-ten-realms",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["valheim.exe"]
+  },
+  {
+    "slug": "ghost-of-tsushima",
+    "name": "Ghost of Tsushima",
+    "defaultMap": "Tsushima Island",
+    "defaultMapSlug": "tsushima-island",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["GhostOfTsushima.exe"]
+  },
+  {
+    "slug": "stalker-2-heart-of-chornobyl",
+    "name": "S.T.A.L.K.E.R. 2",
+    "defaultMap": "The Zone",
+    "defaultMapSlug": "the-zone",
+    "hasAntiCheat": false,
+    "suggestedMode": "injection",
+    "processes": ["Stalker2.exe"]
+  }
+]

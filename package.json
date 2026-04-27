@@ -1,0 +1,55 @@
+{
+  "name": "mapgenie-overlay",
+  "version": "0.1.0",
+  "description": "Transparent always-on-top overlay for MapGenie.io maps with dual borderless/injection mode",
+  "main": "dist/main/main/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run build:watch\" \"npm run electron:dev\"",
+    "build": "tsc --project tsconfig.main.json && tsc --project tsconfig.renderer.json && npm run copy:renderer && npm run copy:shared",
+    "copy:renderer": "node -e \"const fs=require('fs'); ['overlay.html','overlay.css'].forEach(f=>{ fs.mkdirSync('dist/renderer',{recursive:true}); fs.copyFileSync('src/renderer/'+f,'dist/renderer/'+f); });\"",
+    "copy:shared": "node -e \"const fs=require('fs'); fs.mkdirSync('dist/main/shared',{recursive:true}); ['gameConfig.json','gameCatalog.json'].forEach(f=>fs.copyFileSync('src/shared/'+f,'dist/main/shared/'+f));\"",
+    "build:watch": "concurrently \"tsc --project tsconfig.main.json --watch\" \"tsc --project tsconfig.renderer.json --watch\" \"npm run copy:renderer\"",
+    "electron:dev": "wait-on dist/main/main/index.js && electron . --dev",
+    "start": "npm run build && electron .",
+    "pack": "npm run build && electron-builder --dir",
+    "dist": "npm run build && electron-builder"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.2.0",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.9.0",
+    "typescript": "^5.4.0",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "ps-list": "^7.2.0"
+  },
+  "build": {
+    "appId": "io.mapgenie.overlay",
+    "productName": "MapGenie Overlay",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "dist/**/*",
+      "assets/**/*",
+      "src/renderer/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "overlay-native/",
+        "to": "overlay-native/",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}

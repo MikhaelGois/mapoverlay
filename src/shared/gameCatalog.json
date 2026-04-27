@@ -1,0 +1,1105 @@
+{
+  "generatedAt": "2026-04-27T13:31:43.6489833-03:00",
+  "mapgenie": [
+    {
+      "provider": "mapgenie",
+      "slug": "ghost-of-yotei",
+      "name": "Ghost Of Yotei",
+      "url": "https://mapgenie.io/ghost-of-yotei"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hollow-knight",
+      "name": "Hollow Knight",
+      "url": "https://mapgenie.io/hollow-knight"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "fallout-3",
+      "name": "Fallout 3",
+      "url": "https://mapgenie.io/fallout-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "far-cry-5",
+      "name": "Far Cry 5",
+      "url": "https://mapgenie.io/far-cry-5"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "forza-horizon-5",
+      "name": "Forza Horizon 5",
+      "url": "https://mapgenie.io/forza-horizon-5"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hitman-2",
+      "name": "Hitman 2",
+      "url": "https://mapgenie.io/hitman-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "horizon-zero-dawn",
+      "name": "Horizon Zero Dawn",
+      "url": "https://mapgenie.io/horizon-zero-dawn"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "texas-chain-saw-massacre",
+      "name": "Texas Chain Saw Massacre",
+      "url": "https://mapgenie.io/texas-chain-saw-massacre"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "wuthering-waves",
+      "name": "Wuthering Waves",
+      "url": "https://mapgenie.io/wuthering-waves"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "the-cycle-frontier",
+      "name": "The Cycle Frontier",
+      "url": "https://mapgenie.io/the-cycle-frontier"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "runescape-dragonwilds",
+      "name": "Runescape Dragonwilds",
+      "url": "https://mapgenie.io/runescape-dragonwilds"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "diablo-4",
+      "name": "Diablo 4",
+      "url": "https://mapgenie.io/diablo-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grand-theft-auto-3",
+      "name": "Grand Theft Auto 3",
+      "url": "https://mapgenie.io/grand-theft-auto-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-brotherhood",
+      "name": "Assassins Creed Brotherhood",
+      "url": "https://mapgenie.io/assassins-creed-brotherhood"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "baldurs-gate-3",
+      "name": "Baldurs Gate 3",
+      "url": "https://mapgenie.io/baldurs-gate-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pokemon-scarlet-violet",
+      "name": "Pokemon Scarlet Violet",
+      "url": "https://mapgenie.io/pokemon-scarlet-violet"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "star-wars-outlaws",
+      "name": "Star Wars Outlaws",
+      "url": "https://mapgenie.io/star-wars-outlaws"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "forza-horizon-4",
+      "name": "Forza Horizon 4",
+      "url": "https://mapgenie.io/forza-horizon-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "wild-hearts",
+      "name": "Wild Hearts",
+      "url": "https://mapgenie.io/wild-hearts"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "conan-exiles",
+      "name": "Conan Exiles",
+      "url": "https://mapgenie.io/conan-exiles"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "just-cause-4",
+      "name": "Just Cause 4",
+      "url": "https://mapgenie.io/just-cause-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "avowed",
+      "name": "Avowed",
+      "url": "https://mapgenie.io/avowed"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "enshrouded",
+      "name": "Enshrouded",
+      "url": "https://mapgenie.io/enshrouded"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "ghostwire-tokyo",
+      "name": "Ghostwire Tokyo",
+      "url": "https://mapgenie.io/ghostwire-tokyo"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "zelda-tears-of-the-kingdom",
+      "name": "Zelda Tears Of The Kingdom",
+      "url": "https://mapgenie.io/zelda-tears-of-the-kingdom"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "arc-raiders",
+      "name": "Arc Raiders",
+      "url": "https://mapgenie.io/arc-raiders"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "rise-of-the-ronin",
+      "name": "Rise Of The Ronin",
+      "url": "https://mapgenie.io/rise-of-the-ronin"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "borderlands-2",
+      "name": "Borderlands 2",
+      "url": "https://mapgenie.io/borderlands-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grand-theft-auto-2",
+      "name": "Grand Theft Auto 2",
+      "url": "https://mapgenie.io/grand-theft-auto-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "sand-land",
+      "name": "Sand Land",
+      "url": "https://mapgenie.io/sand-land"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grounded",
+      "name": "Grounded",
+      "url": "https://mapgenie.io/grounded"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "silent-hill-f",
+      "name": "Silent Hill F",
+      "url": "https://mapgenie.io/silent-hill-f"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "divinity-original-sin-2",
+      "name": "Divinity Original Sin 2",
+      "url": "https://mapgenie.io/divinity-original-sin-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "the-outer-worlds-2",
+      "name": "The Outer Worlds 2",
+      "url": "https://mapgenie.io/the-outer-worlds-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "the-forest",
+      "name": "The Forest",
+      "url": "https://mapgenie.io/the-forest"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "crimson-desert",
+      "name": "Crimson Desert",
+      "url": "https://mapgenie.io/crimson-desert"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "new-world",
+      "name": "New World",
+      "url": "https://mapgenie.io/new-world"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dying-light",
+      "name": "Dying Light",
+      "url": "https://mapgenie.io/dying-light"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "starfield",
+      "name": "Starfield",
+      "url": "https://mapgenie.io/starfield"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dragons-dogma-2",
+      "name": "Dragons Dogma 2",
+      "url": "https://mapgenie.io/dragons-dogma-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-freedom-cry",
+      "name": "Assassins Creed Freedom Cry",
+      "url": "https://mapgenie.io/assassins-creed-freedom-cry"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "death-stranding-2",
+      "name": "Death Stranding 2",
+      "url": "https://mapgenie.io/death-stranding-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "escape-from-duckov",
+      "name": "Escape From Duckov",
+      "url": "https://mapgenie.io/escape-from-duckov"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "tainted-grail-the-fall-of-avalon",
+      "name": "Tainted Grail The Fall Of Avalon",
+      "url": "https://mapgenie.io/tainted-grail-the-fall-of-avalon"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "star-wars-jedi-fallen-order",
+      "name": "Star Wars Jedi Fallen Order",
+      "url": "https://mapgenie.io/star-wars-jedi-fallen-order"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "kingdom-come-deliverance-2",
+      "name": "Kingdom Come Deliverance 2",
+      "url": "https://mapgenie.io/kingdom-come-deliverance-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "god-of-war-ragnarok",
+      "name": "God Of War Ragnarok",
+      "url": "https://mapgenie.io/god-of-war-ragnarok"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "marvels-spider-man-2",
+      "name": "Marvels Spider Man 2",
+      "url": "https://mapgenie.io/marvels-spider-man-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "kena-bridge-of-spirits",
+      "name": "Kena Bridge Of Spirits",
+      "url": "https://mapgenie.io/kena-bridge-of-spirits"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grand-theft-auto-vice-city",
+      "name": "Grand Theft Auto Vice City",
+      "url": "https://mapgenie.io/grand-theft-auto-vice-city"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "subnautica-below-zero",
+      "name": "Subnautica Below Zero",
+      "url": "https://mapgenie.io/subnautica-below-zero"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "donkey-kong-bananza",
+      "name": "Donkey Kong Bananza",
+      "url": "https://mapgenie.io/donkey-kong-bananza"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dark-and-darker",
+      "name": "Dark And Darker",
+      "url": "https://mapgenie.io/dark-and-darker"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "cod-black-ops-7",
+      "name": "Cod Black Ops 7",
+      "url": "https://mapgenie.io/cod-black-ops-7"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "indiana-jones-and-the-great-circle",
+      "name": "Indiana Jones And The Great Circle",
+      "url": "https://mapgenie.io/indiana-jones-and-the-great-circle"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "halo-infinite",
+      "name": "Halo Infinite",
+      "url": "https://mapgenie.io/halo-infinite"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "final-fantasy-xiv",
+      "name": "Final Fantasy Xiv",
+      "url": "https://mapgenie.io/final-fantasy-xiv"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hitman",
+      "name": "Hitman",
+      "url": "https://mapgenie.io/hitman"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "maneater",
+      "name": "Maneater",
+      "url": "https://mapgenie.io/maneater"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "fortnite",
+      "name": "Fortnite",
+      "url": "https://mapgenie.io/fortnite"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-revelations",
+      "name": "Assassins Creed Revelations",
+      "url": "https://mapgenie.io/assassins-creed-revelations"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "slime-rancher",
+      "name": "Slime Rancher",
+      "url": "https://mapgenie.io/slime-rancher"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "genshin-impact",
+      "name": "Genshin Impact",
+      "url": "https://mapgenie.io/genshin-impact"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "cod-warzone",
+      "name": "Cod Warzone",
+      "url": "https://mapgenie.io/cod-warzone"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-valhalla",
+      "name": "Assassins Creed Valhalla",
+      "url": "https://mapgenie.io/assassins-creed-valhalla"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-4-black-flag",
+      "name": "Assassins Creed 4 Black Flag",
+      "url": "https://mapgenie.io/assassins-creed-4-black-flag"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hogwarts-legacy",
+      "name": "Hogwarts Legacy",
+      "url": "https://mapgenie.io/hogwarts-legacy"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "god-of-war-2018",
+      "name": "God Of War 2018",
+      "url": "https://mapgenie.io/god-of-war-2018"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "far-cry-6",
+      "name": "Far Cry 6",
+      "url": "https://mapgenie.io/far-cry-6"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "tunic",
+      "name": "Tunic",
+      "url": "https://mapgenie.io/tunic"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-shadows",
+      "name": "Assassins Creed Shadows",
+      "url": "https://mapgenie.io/assassins-creed-shadows"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "ghost-of-tsushima",
+      "name": "Ghost Of Tsushima",
+      "url": "https://mapgenie.io/ghost-of-tsushima"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "saints-row-4",
+      "name": "Saints Row 4",
+      "url": "https://mapgenie.io/saints-row-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-mirage",
+      "name": "Assassins Creed Mirage",
+      "url": "https://mapgenie.io/assassins-creed-mirage"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "elden-ring",
+      "name": "Elden Ring",
+      "url": "https://mapgenie.io/elden-ring"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "ratchet-and-clank-rift-apart",
+      "name": "Ratchet And Clank Rift Apart",
+      "url": "https://mapgenie.io/ratchet-and-clank-rift-apart"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "red-faction-guerrilla",
+      "name": "Red Faction Guerrilla",
+      "url": "https://mapgenie.io/red-faction-guerrilla"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "expeditions-a-mudrunner-game",
+      "name": "Expeditions A Mudrunner Game",
+      "url": "https://mapgenie.io/expeditions-a-mudrunner-game"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "star-wars-jedi-survivor",
+      "name": "Star Wars Jedi Survivor",
+      "url": "https://mapgenie.io/star-wars-jedi-survivor"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dead-island-2",
+      "name": "Dead Island 2",
+      "url": "https://mapgenie.io/dead-island-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grand-theft-auto",
+      "name": "Grand Theft Auto",
+      "url": "https://mapgenie.io/grand-theft-auto"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "slime-rancher-2",
+      "name": "Slime Rancher 2",
+      "url": "https://mapgenie.io/slime-rancher-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed",
+      "name": "Assassins Creed",
+      "url": "https://mapgenie.io/assassins-creed"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "days-gone",
+      "name": "Days Gone",
+      "url": "https://mapgenie.io/days-gone"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "final-fantasy-xvi",
+      "name": "Final Fantasy Xvi",
+      "url": "https://mapgenie.io/final-fantasy-xvi"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "borderlands-3",
+      "name": "Borderlands 3",
+      "url": "https://mapgenie.io/borderlands-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pokemon-red-blue",
+      "name": "Pokemon Red Blue",
+      "url": "https://mapgenie.io/pokemon-red-blue"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "stellar-blade",
+      "name": "Stellar Blade",
+      "url": "https://mapgenie.io/stellar-blade"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-syndicate",
+      "name": "Assassins Creed Syndicate",
+      "url": "https://mapgenie.io/assassins-creed-syndicate"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grounded-2",
+      "name": "Grounded 2",
+      "url": "https://mapgenie.io/grounded-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "american-truck-simulator",
+      "name": "American Truck Simulator",
+      "url": "https://mapgenie.io/american-truck-simulator"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "immortals-fenyx-rising",
+      "name": "Immortals Fenyx Rising",
+      "url": "https://mapgenie.io/immortals-fenyx-rising"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "clair-obscur-expedition-33",
+      "name": "Clair Obscur Expedition 33",
+      "url": "https://mapgenie.io/clair-obscur-expedition-33"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "gray-zone-warfare",
+      "name": "Gray Zone Warfare",
+      "url": "https://mapgenie.io/gray-zone-warfare"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "kingdom-hearts-3d",
+      "name": "Kingdom Hearts 3d",
+      "url": "https://mapgenie.io/kingdom-hearts-3d"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pokopia",
+      "name": "Pokopia",
+      "url": "https://mapgenie.io/pokopia"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-3-liberation",
+      "name": "Assassins Creed 3 Liberation",
+      "url": "https://mapgenie.io/assassins-creed-3-liberation"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "subnautica",
+      "name": "Subnautica",
+      "url": "https://mapgenie.io/subnautica"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "diablo-immortal",
+      "name": "Diablo Immortal",
+      "url": "https://mapgenie.io/diablo-immortal"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "euro-truck-simulator-2",
+      "name": "Euro Truck Simulator 2",
+      "url": "https://mapgenie.io/euro-truck-simulator-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hello-kitty-island-adventure",
+      "name": "Hello Kitty Island Adventure",
+      "url": "https://mapgenie.io/hello-kitty-island-adventure"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hitman-3",
+      "name": "Hitman 3",
+      "url": "https://mapgenie.io/hitman-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "bully",
+      "name": "Bully",
+      "url": "https://mapgenie.io/bully"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "infinity-nikki",
+      "name": "Infinity Nikki",
+      "url": "https://mapgenie.io/infinity-nikki"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "marathon",
+      "name": "Marathon",
+      "url": "https://mapgenie.io/marathon"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "red-dead-redemption",
+      "name": "Red Dead Redemption",
+      "url": "https://mapgenie.io/red-dead-redemption"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-unity",
+      "name": "Assassins Creed Unity",
+      "url": "https://mapgenie.io/assassins-creed-unity"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "borderlands-4",
+      "name": "Borderlands 4",
+      "url": "https://mapgenie.io/borderlands-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "lost-ark",
+      "name": "Lost Ark",
+      "url": "https://mapgenie.io/lost-ark"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "witcher-3",
+      "name": "Witcher 3",
+      "url": "https://mapgenie.io/witcher-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "mafia",
+      "name": "Mafia",
+      "url": "https://mapgenie.io/mafia"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "sable",
+      "name": "Sable",
+      "url": "https://mapgenie.io/sable"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "the-legend-of-zelda",
+      "name": "The Legend Of Zelda",
+      "url": "https://mapgenie.io/the-legend-of-zelda"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "resident-evil-7-biohazard",
+      "name": "Resident Evil 7 Biohazard",
+      "url": "https://mapgenie.io/resident-evil-7-biohazard"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "v-rising",
+      "name": "V Rising",
+      "url": "https://mapgenie.io/v-rising"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "resident-evil-requiem",
+      "name": "Resident Evil Requiem",
+      "url": "https://mapgenie.io/resident-evil-requiem"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "my-time-at-sandrock",
+      "name": "My Time At Sandrock",
+      "url": "https://mapgenie.io/my-time-at-sandrock"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "where-winds-meet",
+      "name": "Where Winds Meet",
+      "url": "https://mapgenie.io/where-winds-meet"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "resident-evil-2-remake",
+      "name": "Resident Evil 2 Remake",
+      "url": "https://mapgenie.io/resident-evil-2-remake"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "once-human",
+      "name": "Once Human",
+      "url": "https://mapgenie.io/once-human"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "mass-effect",
+      "name": "Mass Effect",
+      "url": "https://mapgenie.io/mass-effect"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "sniper-elite-3",
+      "name": "Sniper Elite 3",
+      "url": "https://mapgenie.io/sniper-elite-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-3",
+      "name": "Assassins Creed 3",
+      "url": "https://mapgenie.io/assassins-creed-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "mafia-the-old-country",
+      "name": "Mafia The Old Country",
+      "url": "https://mapgenie.io/mafia-the-old-country"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "phasmophobia",
+      "name": "Phasmophobia",
+      "url": "https://mapgenie.io/phasmophobia"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "icarus",
+      "name": "Icarus",
+      "url": "https://mapgenie.io/icarus"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grand-theft-auto-4",
+      "name": "Grand Theft Auto 4",
+      "url": "https://mapgenie.io/grand-theft-auto-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "the-outer-worlds",
+      "name": "The Outer Worlds",
+      "url": "https://mapgenie.io/the-outer-worlds"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "blasphemous-2",
+      "name": "Blasphemous 2",
+      "url": "https://mapgenie.io/blasphemous-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "cod-warzone-2",
+      "name": "Cod Warzone 2",
+      "url": "https://mapgenie.io/cod-warzone-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dragon-age-veilguard",
+      "name": "Dragon Age Veilguard",
+      "url": "https://mapgenie.io/dragon-age-veilguard"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "sonic-frontiers",
+      "name": "Sonic Frontiers",
+      "url": "https://mapgenie.io/sonic-frontiers"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "hollow-knight-silksong",
+      "name": "Hollow Knight Silksong",
+      "url": "https://mapgenie.io/hollow-knight-silksong"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "outriders",
+      "name": "Outriders",
+      "url": "https://mapgenie.io/outriders"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-2",
+      "name": "Assassins Creed 2",
+      "url": "https://mapgenie.io/assassins-creed-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "black-myth-wukong",
+      "name": "Black Myth Wukong",
+      "url": "https://mapgenie.io/black-myth-wukong"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "just-cause-3",
+      "name": "Just Cause 3",
+      "url": "https://mapgenie.io/just-cause-3"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "just-cause-2",
+      "name": "Just Cause 2",
+      "url": "https://mapgenie.io/just-cause-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "zelda-echoes-of-wisdom",
+      "name": "Zelda Echoes Of Wisdom",
+      "url": "https://mapgenie.io/zelda-echoes-of-wisdom"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pokemon-legends-z-a",
+      "name": "Pokemon Legends Z A",
+      "url": "https://mapgenie.io/pokemon-legends-z-a"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "south-park-the-stick-of-truth",
+      "name": "South Park The Stick Of Truth",
+      "url": "https://mapgenie.io/south-park-the-stick-of-truth"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dragon-quest-vii",
+      "name": "Dragon Quest Vii",
+      "url": "https://mapgenie.io/dragon-quest-vii"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "sons-of-the-forest",
+      "name": "Sons Of The Forest",
+      "url": "https://mapgenie.io/sons-of-the-forest"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "elden-ring-nightreign",
+      "name": "Elden Ring Nightreign",
+      "url": "https://mapgenie.io/elden-ring-nightreign"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pokemon-legends-arceus",
+      "name": "Pokemon Legends Arceus",
+      "url": "https://mapgenie.io/pokemon-legends-arceus"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "titan-quest-2",
+      "name": "Titan Quest 2",
+      "url": "https://mapgenie.io/titan-quest-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pokemon-firered-leafgreen",
+      "name": "Pokemon Firered Leafgreen",
+      "url": "https://mapgenie.io/pokemon-firered-leafgreen"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "skyrim",
+      "name": "Skyrim",
+      "url": "https://mapgenie.io/skyrim"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "atomfall",
+      "name": "Atomfall",
+      "url": "https://mapgenie.io/atomfall"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "palia",
+      "name": "Palia",
+      "url": "https://mapgenie.io/palia"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "tales-of-arise",
+      "name": "Tales Of Arise",
+      "url": "https://mapgenie.io/tales-of-arise"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "sniper-elite-v2",
+      "name": "Sniper Elite V2",
+      "url": "https://mapgenie.io/sniper-elite-v2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-rogue",
+      "name": "Assassins Creed Rogue",
+      "url": "https://mapgenie.io/assassins-creed-rogue"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dying-light-2",
+      "name": "Dying Light 2",
+      "url": "https://mapgenie.io/dying-light-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dune-awakening",
+      "name": "Dune Awakening",
+      "url": "https://mapgenie.io/dune-awakening"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "grand-theft-auto-san-andreas",
+      "name": "Grand Theft Auto San Andreas",
+      "url": "https://mapgenie.io/grand-theft-auto-san-andreas"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "prey-2017",
+      "name": "Prey 2017",
+      "url": "https://mapgenie.io/prey-2017"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "palworld",
+      "name": "Palworld",
+      "url": "https://mapgenie.io/palworld"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "tarkov",
+      "name": "Tarkov",
+      "url": "https://mapgenie.io/tarkov"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "fallout-new-vegas",
+      "name": "Fallout New Vegas",
+      "url": "https://mapgenie.io/fallout-new-vegas"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "stalker-2-heart-of-chornobyl",
+      "name": "Stalker 2 Heart Of Chornobyl",
+      "url": "https://mapgenie.io/stalker-2-heart-of-chornobyl"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "disney-dreamlight-valley",
+      "name": "Disney Dreamlight Valley",
+      "url": "https://mapgenie.io/disney-dreamlight-valley"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "marvels-spider-man",
+      "name": "Marvels Spider Man",
+      "url": "https://mapgenie.io/marvels-spider-man"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dragon-quest-1",
+      "name": "Dragon Quest 1",
+      "url": "https://mapgenie.io/dragon-quest-1"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "horizon-forbidden-west",
+      "name": "Horizon Forbidden West",
+      "url": "https://mapgenie.io/horizon-forbidden-west"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "luigis-mansion-2",
+      "name": "Luigis Mansion 2",
+      "url": "https://mapgenie.io/luigis-mansion-2"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "prince-of-persia-the-lost-crown",
+      "name": "Prince Of Persia The Lost Crown",
+      "url": "https://mapgenie.io/prince-of-persia-the-lost-crown"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "tiny-tinas-wonderlands",
+      "name": "Tiny Tinas Wonderlands",
+      "url": "https://mapgenie.io/tiny-tinas-wonderlands"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "oblivion",
+      "name": "Oblivion",
+      "url": "https://mapgenie.io/oblivion"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-origins",
+      "name": "Assassins Creed Origins",
+      "url": "https://mapgenie.io/assassins-creed-origins"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "resident-evil-village",
+      "name": "Resident Evil Village",
+      "url": "https://mapgenie.io/resident-evil-village"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "batman-arkham-asylum",
+      "name": "Batman Arkham Asylum",
+      "url": "https://mapgenie.io/batman-arkham-asylum"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "pragmata",
+      "name": "Pragmata",
+      "url": "https://mapgenie.io/pragmata"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "far-cry-4",
+      "name": "Far Cry 4",
+      "url": "https://mapgenie.io/far-cry-4"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "assassins-creed-odyssey",
+      "name": "Assassins Creed Odyssey",
+      "url": "https://mapgenie.io/assassins-creed-odyssey"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "avatar-frontiers-of-pandora",
+      "name": "Avatar Frontiers Of Pandora",
+      "url": "https://mapgenie.io/avatar-frontiers-of-pandora"
+    },
+    {
+      "provider": "mapgenie",
+      "slug": "dredge",
+      "name": "Dredge",
+      "url": "https://mapgenie.io/dredge"
+    }
+  ],
+  "tcno": [
+    {
+      "provider": "tcno",
+      "slug": "abi",
+      "name": "Arena Breakout: Infinite",
+      "url": "https://maps.tcno.co/abi"
+    },
+    {
+      "provider": "tcno",
+      "slug": "arc",
+      "name": "ARC Raiders",
+      "url": "https://maps.tcno.co/arc"
+    },
+    {
+      "provider": "tcno",
+      "slug": "df",
+      "name": "Delta Force",
+      "url": "https://maps.tcno.co/df"
+    },
+    {
+      "provider": "tcno",
+      "slug": "dune",
+      "name": "Dune: Awakening",
+      "url": "https://maps.tcno.co/dune"
+    },
+    {
+      "provider": "tcno",
+      "slug": "gzw",
+      "name": "Gray Zone Warfare",
+      "url": "https://maps.tcno.co/gzw"
+    },
+    {
+      "provider": "tcno",
+      "slug": "s1",
+      "name": "Schedule 1",
+      "url": "https://maps.tcno.co/s1"
+    }
+  ]
+}

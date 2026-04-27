@@ -1,0 +1,302 @@
+/* ══════════════════════════════════════
+   MapGenie Overlay — Stylesheet
+   ══════════════════════════════════════ */
+
+:root {
+  --bar-bg: rgba(15, 15, 20, 0.88);
+  --bar-border: rgba(255, 255, 255, 0.08);
+  --accent: #e8a020;
+  --accent-hover: #f0b840;
+  --danger: #e05050;
+  --text: #e8e8e8;
+  --text-muted: #888;
+  --btn-bg: rgba(255,255,255,0.08);
+  --btn-hover: rgba(255,255,255,0.16);
+  --radius: 6px;
+  --bar-height: 46px;
+  --notif-height: 32px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  user-select: none;
+}
+
+/* ── Control Bar ── */
+.control-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--bar-height);
+  background: var(--bar-bg);
+  border-bottom: 1px solid var(--bar-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Drag handle covers the non-interactive area */
+.drag-handle {
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 6px;
+  flex-shrink: 0;
+  cursor: move;
+}
+
+.app-icon { font-size: 16px; }
+.app-title { font-weight: 600; font-size: 13px; color: var(--accent); }
+
+/* All interactive children of drag handle must disable drag */
+.control-bar select,
+.control-bar input,
+.control-bar button {
+  -webkit-app-region: no-drag;
+}
+
+/* ── Selectors ── */
+.selectors {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+select {
+  background: var(--btn-bg);
+  border: 1px solid var(--bar-border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  max-width: 160px;
+  -webkit-app-region: no-drag;
+}
+
+.selectors input[type="text"] {
+  background: var(--btn-bg);
+  border: 1px solid var(--bar-border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 4px 8px;
+  font-size: 12px;
+  width: 130px;
+}
+
+.selectors input[type="text"]::placeholder {
+  color: var(--text-muted);
+}
+
+.selectors input[type="text"]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+select:focus { outline: none; border-color: var(--accent); }
+select option { background: #1a1a22; color: var(--text); }
+select:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Controls right side ── */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* ── Buttons ── */
+.btn {
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 10px;
+  transition: background 0.15s, opacity 0.15s;
+  -webkit-app-region: no-drag;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #111;
+  font-weight: 600;
+}
+.btn-primary:hover { background: var(--accent-hover); }
+
+.btn-icon {
+  background: var(--btn-bg);
+  color: var(--text);
+  padding: 5px 8px;
+  font-size: 14px;
+}
+.btn-icon:hover { background: var(--btn-hover); }
+
+.btn-close:hover { background: var(--danger); }
+
+/* ── Mode Toggle ── */
+.mode-toggle {
+  display: flex;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--bar-border);
+}
+
+.btn-mode {
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 0;
+  padding: 4px 10px;
+  font-size: 11px;
+  border: none;
+}
+.btn-mode:hover { background: var(--btn-hover); color: var(--text); }
+.btn-mode.active { background: var(--accent); color: #111; font-weight: 600; }
+.btn-mode:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* ── Opacity Control ── */
+.opacity-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted);
+}
+
+.opacity-control .icon { font-size: 14px; }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--btn-bg);
+  outline: none;
+  -webkit-app-region: no-drag;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+#opacity-value {
+  font-size: 11px;
+  color: var(--text-muted);
+  min-width: 28px;
+  text-align: right;
+}
+
+/* ── Click-through active state ── */
+body.click-through .control-bar {
+  border-bottom-color: var(--accent);
+  box-shadow: 0 1px 0 0 var(--accent);
+}
+
+#btn-clickthrough.active {
+  background: var(--accent);
+  color: #111;
+}
+
+/* ── Notification Bar ── */
+.notification-bar {
+  position: fixed;
+  top: var(--bar-height);
+  left: 0; right: 0;
+  height: var(--notif-height);
+  background: rgba(20, 60, 100, 0.92);
+  border-bottom: 1px solid rgba(80, 160, 255, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  font-size: 12px;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+}
+
+.notification-bar.warning {
+  background: rgba(80, 40, 10, 0.92);
+  border-bottom-color: rgba(255, 160, 30, 0.4);
+}
+
+.notification-bar.hidden { display: none; }
+#notification-text { flex: 1; }
+#notification-dismiss { padding: 2px 6px; font-size: 11px; }
+
+/* ── Webview Container ── */
+#webview-container {
+  position: fixed;
+  top: var(--bar-height);
+  left: 0; right: 0; bottom: 0;
+  background: transparent;
+}
+
+#webview-container.with-notification {
+  top: calc(var(--bar-height) + var(--notif-height));
+}
+
+/* ── Placeholder ── */
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 16, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.placeholder-inner {
+  text-align: center;
+  max-width: 400px;
+  padding: 24px;
+}
+
+.placeholder-icon { font-size: 48px; display: block; margin-bottom: 16px; }
+.placeholder-inner h2 { color: var(--accent); margin-bottom: 10px; font-size: 20px; }
+.placeholder-inner p { color: var(--text-muted); line-height: 1.6; margin-bottom: 6px; }
+.placeholder-inner .hint { font-size: 12px; margin-top: 8px; }
+kbd {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 11px;
+}
+
+/* ── Resize handle ── */
+.resize-handle {
+  position: fixed;
+  right: 0; bottom: 0;
+  width: 16px; height: 16px;
+  cursor: se-resize;
+  background: transparent;
+}
+
+.resize-handle::after {
+  content: '';
+  position: absolute;
+  right: 3px; bottom: 3px;
+  width: 8px; height: 8px;
+  border-right: 2px solid var(--text-muted);
+  border-bottom: 2px solid var(--text-muted);
+  opacity: 0.4;
+}

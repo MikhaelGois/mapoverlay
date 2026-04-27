@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' 'unsafe-inline' https://mapgenie.io https://*.mapgenie.io https://cdn.mapgenie.io https://maps.tcno.co https://*.tcno.co https://hub.tcno.co; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';" />
+  <title>Game Maps Overlay</title>
+  <link rel="stylesheet" href="overlay.css" />
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════
+       CONTROL BAR — draggable top bar
+  ═══════════════════════════════════════════════ -->
+  <div id="control-bar" class="control-bar">
+    <!-- Drag handle -->
+    <div class="drag-handle" id="drag-handle">
+      <span class="app-icon">🗺️</span>
+      <span class="app-title">MapGenie</span>
+    </div>
+
+    <!-- Game / Map selector -->
+    <div class="selectors">
+      <select id="source-select" title="Select Source">
+        <option value="mapgenie">MapGenie</option>
+        <option value="tcno">TCNO Maps</option>
+      </select>
+      <input id="game-search" type="text" placeholder="Buscar jogo" title="Search game" />
+      <select id="game-select" title="Select Game">
+        <option value="">— Select Game —</option>
+      </select>
+      <input id="map-search" type="text" placeholder="Buscar mapa" title="Search map" />
+      <select id="map-select" title="Select Map" disabled>
+        <option value="">— Select Map —</option>
+      </select>
+      <button id="btn-go" class="btn btn-primary" title="Load selected map">Go</button>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <!-- Mode toggle -->
+      <div class="mode-toggle" title="Overlay mode">
+        <button id="btn-borderless" class="btn btn-mode active" data-mode="borderless">Borderless</button>
+        <button id="btn-injection" class="btn btn-mode" data-mode="injection">Injection</button>
+      </div>
+
+      <!-- Opacity slider -->
+      <div class="opacity-control" title="Opacity">
+        <span class="icon">◑</span>
+        <input type="range" id="opacity-slider" min="10" max="100" value="85" step="5" />
+        <span id="opacity-value">85%</span>
+      </div>
+
+      <!-- Click-through toggle -->
+      <button id="btn-clickthrough" class="btn btn-icon" title="Toggle click-through (Passthrough mode)">
+        <span id="clickthrough-icon">🖱️</span>
+      </button>
+
+      <!-- Minimize -->
+      <button id="btn-minimize" class="btn btn-icon" title="Minimize">─</button>
+
+      <!-- Close (hides to tray) -->
+      <button id="btn-close" class="btn btn-icon btn-close" title="Hide to tray">✕</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       NOTIFICATION BAR — game detected, warnings
+  ═══════════════════════════════════════════════ -->
+  <div id="notification-bar" class="notification-bar hidden">
+    <span id="notification-text"></span>
+    <button id="notification-dismiss" class="btn btn-icon">✕</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       MAP WEBVIEW
+  ═══════════════════════════════════════════════ -->
+  <div id="webview-container">
+    <div id="placeholder" class="placeholder">
+      <div class="placeholder-inner">
+        <span class="placeholder-icon">🗺️</span>
+        <h2>MapGenie Overlay</h2>
+        <p>Select a source, game and map above,<br>then click Go.</p>
+        <p class="hint">Hotkey: <kbd>Ctrl+Shift+M</kbd> — toggle overlay visibility</p>
+        <p class="hint"><kbd>F2</kbd> — toggle click-through (interaction mode)</p>
+      </div>
+    </div>
+    <webview
+      id="map-webview"
+      src="about:blank"
+      allowpopups
+      partition="persist:mapgenie"
+      style="display:none; width:100%; height:100%;"
+      useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ></webview>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       RESIZE HANDLE
+  ═══════════════════════════════════════════════ -->
+  <div id="resize-handle" class="resize-handle"></div>
+
+  <script src="overlay.js"></script>
+</body>
+</html>
