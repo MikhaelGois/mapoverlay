@@ -29,8 +29,8 @@
   {
     "slug": "red-dead-redemption-2",
     "name": "Red Dead Redemption 2",
-    "defaultMap": "New Hanover",
-    "defaultMapSlug": "new-hanover",
+    "defaultMap": "Open Game Page",
+    "defaultMapSlug": "__game_root__",
     "hasAntiCheat": false,
     "suggestedMode": "injection",
     "processes": ["RDR2.exe"]

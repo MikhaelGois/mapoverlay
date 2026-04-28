@@ -38,14 +38,16 @@ const KNOWN_MAP_SLUGS: Record<string, Array<{ slug: string; name: string }>> = {
     { slug: 'toussaint', name: 'Toussaint' },
   ],
   'cyberpunk-2077': [{ slug: 'night-city', name: 'Night City' }],
-  'red-dead-redemption-2': [{ slug: 'new-hanover', name: 'New Hanover' }],
+  'red-dead-redemption': [{ slug: 'world', name: 'World' }],
+  'red-dead-redemption-2': [{ slug: '__game_root__', name: 'Open RDR2 Map' }],
 };
 
 const MAPGENIE_FALLBACK: CatalogEntry[] = [
   { provider: 'mapgenie', slug: 'elden-ring', name: 'Elden Ring', url: 'https://mapgenie.io/elden-ring' },
   { provider: 'mapgenie', slug: 'the-witcher-3', name: 'The Witcher 3', url: 'https://mapgenie.io/the-witcher-3' },
   { provider: 'mapgenie', slug: 'cyberpunk-2077', name: 'Cyberpunk 2077', url: 'https://mapgenie.io/cyberpunk-2077' },
-  { provider: 'mapgenie', slug: 'red-dead-redemption-2', name: 'Red Dead Redemption 2', url: 'https://mapgenie.io/red-dead-redemption-2' },
+  { provider: 'mapgenie', slug: 'red-dead-redemption', name: 'Red Dead Redemption', url: 'https://mapgenie.io/red-dead-redemption' },
+  { provider: 'mapgenie', slug: 'red-dead-redemption-2', name: 'Red Dead Redemption 2', url: 'https://rdr2map.com/' },
   { provider: 'mapgenie', slug: 'baldurs-gate-3', name: "Baldur's Gate 3", url: 'https://mapgenie.io/baldurs-gate-3' },
   { provider: 'mapgenie', slug: 'hogwarts-legacy', name: 'Hogwarts Legacy', url: 'https://mapgenie.io/hogwarts-legacy' },
   { provider: 'mapgenie', slug: 'assassins-creed-odyssey', name: 'Assassin\'s Creed Odyssey', url: 'https://mapgenie.io/assassins-creed-odyssey' },
@@ -68,8 +70,23 @@ const SUPPLEMENTAL_MAPGENIE: CatalogEntry[] = [
   { provider: 'mapgenie', slug: 'escape-from-tarkov', name: 'Escape from Tarkov', url: 'https://mapgenie.io/escape-from-tarkov' },
   { provider: 'mapgenie', slug: 'dragon-quest-xi', name: 'Dragon Quest XI', url: 'https://mapgenie.io/dragon-quest-xi' },
   { provider: 'mapgenie', slug: 'dragon-quest-3-hd-2d-remake', name: 'Dragon Quest 3 HD-2D Remake', url: 'https://mapgenie.io/dragon-quest-3-hd-2d-remake' },
-  { provider: 'mapgenie', slug: 'red-dead-redemption-2', name: 'Red Dead Redemption 2', url: 'https://mapgenie.io/red-dead-redemption-2' },
+  { provider: 'mapgenie', slug: 'red-dead-redemption-2', name: 'Red Dead Redemption 2', url: 'https://rdr2map.com/' },
 ];
+
+function canonicalizeMapgenieSlug(slug: string): string {
+  return slug;
+}
+
+function canonicalizeMapSlug(gameSlug: string, mapSlug: string): string {
+  if (
+    canonicalizeMapgenieSlug(gameSlug) === 'red-dead-redemption-2' &&
+    (mapSlug === 'new-hanover' || mapSlug === 'world' || mapSlug === '__game_root__')
+  ) {
+    return '__game_root__';
+  }
+
+  return mapSlug;
+}
 
 const sourceSelect = document.getElementById('source-select') as HTMLSelectElement;
 const gameSearch = document.getElementById('game-search') as HTMLInputElement;
@@ -87,7 +104,14 @@ const btnClose = document.getElementById('btn-close') as HTMLButtonElement;
 const notificationBar = document.getElementById('notification-bar') as HTMLDivElement;
 const notificationText = document.getElementById('notification-text') as HTMLSpanElement;
 const notificationDismiss = document.getElementById('notification-dismiss') as HTMLButtonElement;
-const mapWebview = document.getElementById('map-webview') as HTMLElement & { src: string };
+type MapWebview = HTMLElement & {
+  src: string;
+  addEventListener: (type: string, listener: (...args: any[]) => void) => void;
+  reload?: () => void;
+  getURL?: () => string;
+};
+
+const mapWebview = document.getElementById('map-webview') as MapWebview;
 const placeholder = document.getElementById('placeholder') as HTMLDivElement;
 const webviewContainer = document.getElementById('webview-container') as HTMLDivElement;
 
@@ -102,9 +126,11 @@ let catalog: GameCatalog = {
 };
 
 let currentMapOptions: Array<{ slug: string; name: string }> = [];
+let lastRequestedUrl = '';
 
 async function init() {
   setupEventListeners();
+  setupWebviewDiagnostics();
 
   const settings = await safeLoadSettings();
   const fetchedCatalog = await safeLoadCatalog();
@@ -119,6 +145,32 @@ async function init() {
   if (providerGames().length === 0) {
     showNotification('Falha ao carregar catálogo de jogos.', 'warning');
   }
+}
+
+function setupWebviewDiagnostics() {
+  mapWebview.addEventListener('did-start-loading', () => {
+    hideNotification();
+  });
+
+  mapWebview.addEventListener('did-fail-load', (event: any) => {
+    const code = Number(event?.errorCode ?? 0);
+
+    if (code === -3) {
+      return;
+    }
+
+    const attemptedUrl = event?.validatedURL || mapWebview.getURL?.() || lastRequestedUrl;
+    const details = event?.errorDescription ? ` ${event.errorDescription}` : '';
+    console.error('[Overlay] Webview load failed', { code, attemptedUrl, details });
+
+    showNotification(`Falha ao abrir mapa (${code}). URL: ${attemptedUrl}${details}`, 'warning');
+  });
+
+  mapWebview.addEventListener('console-message', (event: any) => {
+    if (event?.level >= 2) {
+      console.warn('[MapGenie webview]', event.message);
+    }
+  });
 }
 
 async function safeLoadSettings(): Promise<any> {
@@ -184,7 +236,14 @@ function normalizeCatalog(data: any): GameCatalog {
 
   const dedupe = (items: CatalogEntry[]) => {
     const map = new Map<string, CatalogEntry>();
-    for (const item of items) {
+    for (const original of items) {
+      const item = original.provider === 'mapgenie'
+        ? {
+            ...original,
+            slug: canonicalizeMapgenieSlug(original.slug),
+          }
+        : original;
+
       map.set(`${item.provider}:${item.slug}`.toLowerCase(), item);
     }
     return [...map.values()].sort((a, b) => a.name.localeCompare(b.name));
@@ -201,6 +260,14 @@ function normalizeCatalog(data: any): GameCatalog {
 }
 
 function applySettings(settings: any) {
+  if (settings.lastGameSlug === 'red-dead-redemption' && settings.lastMapSlug === '__game_root__') {
+    settings.lastGameSlug = 'red-dead-redemption-2';
+  }
+
+  if (settings.lastGameSlug === 'red-dead-redemption-2' && (settings.lastMapSlug === 'new-hanover' || settings.lastMapSlug === 'world')) {
+    settings.lastMapSlug = '__game_root__';
+  }
+
   injectionAvailable = settings.injectionAvailable ?? false;
 
   const pct = Math.max(10, Math.min(100, Math.round((settings.opacity ?? 0.85) * 100)));
@@ -384,6 +451,7 @@ function loadSelectedMap() {
   }
 
   const url = buildUrl(provider, gameSlug, mapSlug);
+  lastRequestedUrl = url;
   placeholder.style.display = 'none';
   mapWebview.style.display = 'flex';
   mapWebview.src = url;
@@ -396,11 +464,18 @@ function buildUrl(provider: Provider, gameSlug: string, mapSlug: string): string
     return `https://maps.tcno.co/${gameSlug}`;
   }
 
-  if (!mapSlug || mapSlug === '__game_root__') {
-    return `https://mapgenie.io/${gameSlug}`;
+  const canonicalGameSlug = canonicalizeMapgenieSlug(gameSlug);
+  const canonicalMap = canonicalizeMapSlug(canonicalGameSlug, mapSlug);
+
+  if (canonicalGameSlug === 'red-dead-redemption-2') {
+    return 'https://rdr2map.com/';
   }
 
-  return `https://mapgenie.io/${gameSlug}/maps/${mapSlug}`;
+  if (!canonicalMap || canonicalMap === '__game_root__') {
+    return `https://mapgenie.io/${canonicalGameSlug}`;
+  }
+
+  return `https://mapgenie.io/${canonicalGameSlug}/maps/${canonicalMap}`;
 }
 
 function applyOpacityVisual(alpha: number) {
