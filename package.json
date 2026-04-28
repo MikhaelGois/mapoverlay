@@ -1,6 +1,6 @@
 {
   "name": "mapgenie-overlay",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Transparent always-on-top overlay for MapGenie.io maps with dual borderless/injection mode",
   "main": "dist/main/main/index.js",
   "scripts": {
